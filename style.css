@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.navbar{
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    align-items: center;
+    width: 100%;
+}
+.logo a{
+    font-size: 2.5rem;
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+.toggle{
+    position: absolute;
+    top: 1.7rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+ .toggle .bars{
+    background-color: white;
+    width: 100%;
+    height: 3.7px;
+    border-radius: 10px;
+}
+.links{
+    
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    
+}
+.links li{
+    display: flex;
+    align-items: center;
+}
+.links li a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    width: 91px;
+    text-align: center;
+    padding: 3px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.links li a:hover{
+    background-color: rgba(184, 182, 182, 0.877);
+
+}
+.bg{
+    height:36vw;
+    position: relative;
+    width: 100%;
+    background-image: url("sharda led.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+.banner{
+    position: relative;
+    top: -100px;
+
+}
+.banner h1{
+    width: 100%;
+    text-align: center;
+    position:relative;
+    color: rgb(247, 245, 248);
+    font-size: 4.3vw;
+    font-family: 'Courier New', Courier, monospace
+}
+.container{
+    position: relative;
+    margin: 0px 10px;
+    width: 100vw;
+   
+    top: -50px;
+    background-color: white
+}
+.container img{
+    width: 30vw;
+    height: 25vw;
+    margin: 11px;
+    cursor: pointer;
+}
+.ilogo{
+    position:fixed;
+    right: 0;
+    top: 70vh;
+
+}
+.ilogo a img{
+    width: 40px;
+    opacity: 70%;
+    
+}
+.ilogo a img:hover{
+    opacity: 100%;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 50px;
+    color: white;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+.footer p{
+    text-align: center;
+    margin: 10px;
+}
+/* medea queries here */
+
+@media (max-width:900px) {
+    html{
+        font-size: 55%;
+    }
+   
+    .toggle{
+        display: flex;
+    }
+    .links{
+        display: none;
+        height: 133px;
+        justify-content: unset;
+        position: absolute;
+        top: 5.7rem;
+        background-color: rgba(0, 0, 0, 0.911);
+        flex-direction: column;
+        width: 50vw;
+
+    }
+    .links li{
+        margin-top: 10px;
+        width: 100%;
+
+    }
+    .links li a{
+        width: 1000%;
+    }
+    .links li a:visited{
+          background-color: rgba(184, 182, 182, 0.877);
+    }
+    .nav-active .links{
+        background-color:rgba(255, 255, 255, 0.89) ;
+    }
+    .container{
+        top: -35px;
+    }
+    .container img{
+        width: 45vw;
+        height: 37vw;
+    }
+    
+}
+@media (max-width:500px) {
+
+    .bg{
+        height: 181px;
+    background-size: 550px;
+
+}
+.container{
+    top: -16px;
+}
+.container img{
+    width: 90vw;
+    height: 70vw;
+
+}
+}
+
+/* active classes here  */
+.active{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.bg-active{
+    background-color: rgba(0, 0, 0, 0.911);
+}
+.nav-active{
+    background-color: rgba(255, 255, 255, 0.89);
+    height: 50px;
+}
+.nav-active .links li a{
+    color: black;
+}
+.nav-active .logo a{
+    color: black;
+}
+.nav-active .toggle .bars{
+    background-color: black;
+}
