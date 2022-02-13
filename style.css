@@ -126,6 +126,8 @@ html{
     align-items: center;
     padding: 10px;
     font-size: 1.2rem;
+    border-radious:10px;
+    margin:10px;
 }
 .footer b{
     text-align: center;
