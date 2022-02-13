@@ -127,9 +127,13 @@ html{
     padding: 10px;
     font-size: 1.2rem;
 }
-.footer p{
+.footer b{
     text-align: center;
     margin: 10px;
+}
+.footer a{
+text-decoration:none;
+    margin:10px;
 }
 /* medea queries here */
 
