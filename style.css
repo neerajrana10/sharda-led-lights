@@ -9,6 +9,8 @@ html{
 .navbar{
     z-index: 1;
     position: fixed;
+    left:0;
+    top:0;
     display: flex;
     justify-content: space-between;
     height: 55px;
@@ -70,6 +72,7 @@ html{
 .bg{
     height:36vw;
     position: relative;
+    left:0;
     width: 100%;
     background-image: url("sharda led.jpg");
     background-repeat: no-repeat;
@@ -92,8 +95,8 @@ html{
 .container{
     position: relative;
     margin: 0px 10px;
-    width: 100vw;
-   
+    width: 100%;
+    left:0;
     top: -50px;
     background-color: white
 }
@@ -136,6 +139,7 @@ html{
 .footer a{
 text-decoration:none;
     margin:10px;
+    text-align:center;
 
 }
 .footer a b{
