@@ -126,7 +126,7 @@ html{
     align-items: center;
     padding: 10px;
     font-size: 1.2rem;
-    border-radious:10px;
+    border-radius:10px;
     margin:10px;
 }
 .footer b{
@@ -136,8 +136,13 @@ html{
 .footer a{
 text-decoration:none;
     margin:10px;
+
 }
-/* medea queries here */
+.footer a b{
+    text-align:center;
+    colour:white;
+}
+/* media queries here */
 
 @media (max-width:900px) {
     html{
